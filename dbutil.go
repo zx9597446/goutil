@@ -25,7 +25,7 @@ func newStmt(sql string) *dbStmt {
 func (s *dbStmt) prepare(db *sql.DB) {
 	var err error
 	s.stmt, err = db.Prepare(s.sql)
-	panicfIf(err, "prepare sql statement [%s] failed: %s\n", s.sql, err.Error())
+	panicfIf(err, "prepare sql statement [%s] failed: %s\n", s.sql, err)
 }
 
 func prepareAllStmts(db *sql.DB) {
