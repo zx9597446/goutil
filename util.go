@@ -23,7 +23,7 @@ func logIf(err error) {
 
 func panicfIf(err error, format string, v ...interface{}) {
 	if err != nil {
-		log.Panicf(format, v)
+		log.Panicf(format, v...)
 	}
 }
 
