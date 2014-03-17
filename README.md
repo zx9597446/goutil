@@ -1,4 +1,4 @@
 goutil
 ======
 
-util function in golang
+util functions in golang
